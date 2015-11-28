@@ -9,4 +9,8 @@ class Comment < ActiveRecord::Base
 		'four star' 	=> '4_star',
 		'five star' 	=> '5_star'
 	}
+
+	def humanized_rating
+		RATINGS.invert[self.rating]
+	end
 end
