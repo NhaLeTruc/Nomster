@@ -1,6 +1,7 @@
 class Place < ActiveRecord::Base
 	self.per_page = 5
 	belongs_to :user
+	has_many :photos
 	has_many :comments
 
 	geocoded_by :address
