@@ -22,6 +22,7 @@ gem 'devise', '>= 3.2.4'
 gem 'geocoder'
 gem 'figaro', '>= 1.0.0'
 gem 'carrierwave'
+gem 'fog', '~> 1.3.1'
 
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
