@@ -34,10 +34,10 @@
 	<br>
 	<!-- Edit & Destroy Buttons -->
 	<div class="pull-right">
-		<button class="btn btn-primary" data-toggle="modal" data-target="#myModal2">
-	  		Upload a Photo
-		</button>
 		<% if current_user && current_user == @place.user %>
+			<button class="btn btn-primary" data-toggle="modal" data-target="#myModal2">
+		  		Upload a Photo
+			</button>
 			<%= link_to 'Edit', edit_place_path(@place), :class => 'btn btn-primary' %>
 			<%= link_to 'Destroy', place_path(@place), :method => :delete, :data => {:confirm => 'Are you sure you want to delete this?'}, :class => 'btn btn-danger' %>
 		<% end %>
