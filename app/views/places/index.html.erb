@@ -44,13 +44,13 @@
 
 			    <h1><%= link_to place.name, place_path(place) %></h1>
 			    <div>
-			    <div class="col-xs-6 pull-left">
+			    <div class="col-xs-12 col-sm-6 pull-left">
 			    	<i><%= place.address %></i><br /><br />
 			    	<p><%= place.description %></p><br />
 			    </div>
 
 				<% if place.photos.present? %>
-					<div class="col-xs-6 pull-right place_img">
+					<div class="col-xs-12 col-sm-6 pull-right place_img">
 							<%= image_tag place.photos.last.picture, :class => 'img-rounded'%>
 					</div>
 				<% end %>
